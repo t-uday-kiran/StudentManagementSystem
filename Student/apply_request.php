@@ -142,7 +142,7 @@
 									<div class="col-md-6 col-sm-12">
 										<div class="form-group">
 											<label>HallTicket </label>
-											<input name="hallticket" type="text" class="form-control" required="true" autocomplete="off" readonly value="<?php echo $row['halticket']; ?>">
+											<input name="htnumber" type="text" class="form-control" required="true" autocomplete="off" readonly value="<?php echo $row['HallTicket']; ?>">
 										</div>
 									</div>
 									<?php endif ?>
@@ -152,7 +152,7 @@
 										<div class="form-group">
 											<label>Request Type :</label>
 											<select name="request_type" class="custom-select form-control" required="true" autocomplete="off">
-											<option value="">Select leave type...</option>
+											<option value="">Select Request type...</option>
 											<?php $sql = "SELECT  RequestType from tblrequesttype";
 											$query = $dbh -> prepare($sql);
 											$query->execute();
@@ -162,7 +162,7 @@
 											{
 											foreach($results as $result)
 											{   ?>                                            
-											<option value="<?php echo htmlentities($result->LeaveType);?>"><?php echo htmlentities($result->requestType);?></option>
+											<option value="<?php echo htmlentities($result->RequestType);?>"><?php echo htmlentities($result->RequestType);?></option>
 											<?php }} ?>
 											</select>
 										</div>

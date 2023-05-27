@@ -1,11 +1,13 @@
 <?php include('includes/header.php') ?>
 <?php include('../includes/session.php') ?>
+<?php include('../includes/attendanceDbConfig.php'); ?>
 <?php
 
 
 if (isset($_POST['mydata'])) {
 
 $wholeData = $_POST['mydata'];
+$month = strtolower($_POST['month']);
 
 $splittedData = explode('},',(string)$wholeData);
 
@@ -30,15 +32,15 @@ foreach ($splittedData as $value) {
 		$onDuty = (int)$obj->On_Duty;
 		$eligibleDays = (int)$obj->Eligible_Days;
 		$attendancePercentage = (int)$obj->Attendance_Percentage;
-		$month	=	$obj->Month;
-		$year	=	(int)$obj->Year;
+		// $month	=	$obj->Month;
+		// $year	=	(int)$obj->Year;
 
 		if(!empty($attendeeCode) && !empty($attendeeName)) {
-			$sql = "INSERT INTO tblattendance(AttendeeCode,attendeeName,designation,totalDays,totalHolidays,workingDays,fulldayPresent,halfdayPresent,errors,totalAbsents,totalLeaves,weekOffs,onDuty,eligibleDays,attendancePercentage,month,year) VALUES('$attendeeCode','$attendeeName','$designation','$totalDays','$totalHolidays','$workingDays' ,'$fulldayPresent','$halfdayPresent','$errors','$totalAbsents','$totalLeaves','$weekOffs','$onDuty','$eligibleDays','$attendancePercentage', '$month', '$year')";
-			if (mysqli_query($conn, $sql)) {
+			$sql = "INSERT INTO $month(AttendeeCode,attendeeName,designation,totalDays,totalHolidays,workingDays,fulldayPresent,halfdayPresent,errors,totalAbsents,totalLeaves,weekOffs,onDuty,eligibleDays,attendancePercentage) VALUES('$attendeeCode','$attendeeName','$designation','$totalDays','$totalHolidays','$workingDays' ,'$fulldayPresent','$halfdayPresent','$errors','$totalAbsents','$totalLeaves','$weekOffs','$onDuty','$eligibleDays','$attendancePercentage')";
+			if (mysqli_query($attconn, $sql)) {
 				//echo "New record created successfully";
 			} else {
-				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+				//echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
 		}
 	}
@@ -97,12 +99,23 @@ foreach ($splittedData as $value) {
 					</div>
 				</div>
 
+
 				<div class="pd-20 card-box mb-30">
-
-				
-
 					<div class="wizard-content">
+
+
+
 						<form method="post" action="">
+						<select name="month" id="month">
+						<?php
+						for ($month = 1; $month <= 12; $month++) {
+							$monthName = date('F', mktime(0, 0, 0, $month, 1));
+							echo "<option value='$monthName'>$monthName</option>";
+						}
+						?>
+					</select>
+					<br></br>
+
 						<div class="clearfix">
 						<div class="pull-left">
 							<input type="file" id="myFile" onchange="fileChange(event)" name="filename">

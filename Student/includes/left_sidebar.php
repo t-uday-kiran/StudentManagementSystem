@@ -42,10 +42,13 @@
 						
 					</li>
 					<li class="dropdown">
-						<a href="results.php" class="dropdown-toggle no-arrow">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Results</span>
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-apartment"></span><span class="mtext"> Results </span>
 						</a>
-						
+						<ul class="submenu">
+							<li><a href="results.php">External</a></li>
+							<li><a href="#">Internal</a></li>
+						</ul>
 					</li>
 					<li class="dropdown">
 						<a href="https://drivetube.netlify.app/" class="dropdown-toggle no-arrow">

@@ -57,7 +57,7 @@
 								
 								 <?php 								 
                                     
-									$query	=	mysqli_query($attconn, "SELECT * from `jan` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
+									$query	=	mysqli_query($attconn, "SELECT * from `january` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
                                     
                                     while($result = mysqli_fetch_array($query))
                                     {               
@@ -78,7 +78,7 @@
 								
 								 <?php 								 
                                     
-									$query	=	mysqli_query($attconn, "SELECT * from `feb` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
+									$query	=	mysqli_query($attconn, "SELECT * from `february` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
                                     
                                     while($result = mysqli_fetch_array($query))
                                     {               
@@ -99,7 +99,7 @@
 								
 								 <?php 								 
                                     
-									$query	=	mysqli_query($attconn, "SELECT * from `mar` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
+									$query	=	mysqli_query($attconn, "SELECT * from `march` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
                                     
                                     while($result = mysqli_fetch_array($query))
                                     {               
@@ -120,7 +120,7 @@
 								
 								 <?php 								 
                                     
-									$query	=	mysqli_query($attconn, "SELECT * from `apr` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
+									$query	=	mysqli_query($attconn, "SELECT * from `april` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
                                     
                                     while($result = mysqli_fetch_array($query))
                                     {               
@@ -162,7 +162,7 @@
 								
 								 <?php 								 
                                     
-									$query	=	mysqli_query($attconn, "SELECT * from `jun` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
+									$query	=	mysqli_query($attconn, "SELECT * from `june` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
                                     
                                     while($result = mysqli_fetch_array($query))
                                     {               
@@ -183,7 +183,7 @@
 								
 								 <?php 								 
                                     
-									$query	=	mysqli_query($attconn, "SELECT * from `jul` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
+									$query	=	mysqli_query($attconn, "SELECT * from `july` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
                                     
                                     while($result = mysqli_fetch_array($query))
                                     {               
@@ -204,7 +204,7 @@
 								
 								 <?php 								 
                                     
-									$query	=	mysqli_query($attconn, "SELECT * from `aug` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
+									$query	=	mysqli_query($attconn, "SELECT * from `august` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
                                     
                                     while($result = mysqli_fetch_array($query))
                                     {               
@@ -225,7 +225,7 @@
 								
 								 <?php 								 
                                     
-									$query	=	mysqli_query($attconn, "SELECT * from `sep` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
+									$query	=	mysqli_query($attconn, "SELECT * from `september` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
                                     
                                     while($result = mysqli_fetch_array($query))
                                     {               
@@ -246,7 +246,7 @@
 								
 								 <?php 								 
                                     
-									$query	=	mysqli_query($attconn, "SELECT * from `oct` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
+									$query	=	mysqli_query($attconn, "SELECT * from `october` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
                                     
                                     while($result = mysqli_fetch_array($query))
                                     {               
@@ -267,7 +267,7 @@
 								
 								 <?php 								 
                                     
-									$query	=	mysqli_query($attconn, "SELECT * from `nov` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
+									$query	=	mysqli_query($attconn, "SELECT * from `november` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
                                     
                                     while($result = mysqli_fetch_array($query))
                                     {               
@@ -288,7 +288,7 @@
 								
 								 <?php 								 
                                     
-									$query	=	mysqli_query($attconn, "SELECT * from `dec` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
+									$query	=	mysqli_query($attconn, "SELECT * from `december` where AttendeeCode = '".$session_htnumber."'") or die(mysqli_error());
                                     
                                     while($result = mysqli_fetch_array($query))
                                     {               
