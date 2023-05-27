@@ -5,7 +5,7 @@ define('DB_USER','root');
 define('DB_PASS','');
 define('DB_NAME','attendance_db');
 
-$conn = mysqli_connect('localhost','root','','attendance_db') or die(mysqli_error());
+$attconn = mysqli_connect('localhost','root','','attendance_db') or die(mysqli_error());
 
 // Establish database connection.
 try
