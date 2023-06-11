@@ -79,7 +79,7 @@ if(isset($_POST['signin']))
 	<div class="login-header box-shadow">
 		<div class="container-fluid d-flex justify-content-between align-items-center">
 			<div class="brand-logo">
-				<a href="login.html">
+				<a href="index.php">
 					<img src="vendors/images/deskapp-logo-svg.png" alt="">
 				</a>
 			</div>
@@ -113,7 +113,7 @@ if(isset($_POST['signin']))
 							<div class="row pb-30">
 								
 								<div class="col-6">
-									<div class="forgot-password"><a href="forgot-password.html">Forgot Password</a></div>
+									<div class="forgot-password"><a href="#">Forgot Password</a></div>
 								</div>
 							</div>
 							<div class="row">

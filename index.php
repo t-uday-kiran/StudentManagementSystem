@@ -50,7 +50,7 @@
             <div class="wm-main-header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3"><a href="index.html" class="wm-logo"><img src="images/logo-1.png"
+                        <div class="col-md-3"><a href="index.php" class="wm-logo"><img src="images/logo-1.png"
                                     alt=""></a></div>
                         <div class="col-md-9">
                             <!--// Navigation \\-->
@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                                     <ul class="nav navbar-nav">
-                                        <li class="active"><a href="index.html">Home</a>
+                                        <li class="active"><a href="index.php">Home</a>
                                             <ul class="wm-dropdown-menu">
                                             </ul>
                                         </li>
@@ -98,7 +98,7 @@
                                                     <div class="col-md-5">
                                                         <h4>Main Block</h4>
                                                         <a href="#" class="wm-thumbnail">
-                                                            <img src="extra-images/mega-menuadd.jpg" alt="" />
+                                                            <img src="Home/extra-images/mega-menuadd.jpg" alt="" />
                                                         </a>
                                                     </div>
                                                 </li>
@@ -123,10 +123,10 @@
 
             <div class="wm-banner-one">
                 <div class="wm-banner-one-for">
-                    <div class="wm-banner-one-for-layer"> <img src="extra-images/banner-view1-1.jpg" alt=""> </div>
-                    <div class="wm-banner-one-for-layer"> <img src="extra-images/banner-view1-2.jpg" alt=""> </div>
-                    <div class="wm-banner-one-for-layer"> <img src="extra-images/banner-view1-3.jpg" alt=""> </div>
-                    <div class="wm-banner-one-for-layer"> <img src="extra-images/banner-view1-1.jpg" alt=""> </div>
+                    <div class="wm-banner-one-for-layer"> <img src="Home/extra-images/banner-view1-1.jpg" alt=""> </div>
+                    <div class="wm-banner-one-for-layer"> <img src="Home/extra-images/banner-view1-2.jpg" alt=""> </div>
+                    <div class="wm-banner-one-for-layer"> <img src="Home/extra-images/banner-view1-3.jpg" alt=""> </div>
+                    <div class="wm-banner-one-for-layer"> <img src="Home/extra-images/banner-view1-1.jpg" alt=""> </div>
                 </div>
                 <div class="wm-banner-one-nav">
                     <div class="wm-banner-one-nav-layer">
