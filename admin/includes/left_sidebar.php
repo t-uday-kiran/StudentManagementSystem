@@ -22,6 +22,12 @@
 						<span class="micon dw dw-calendar1"></span><span class="mtext">Department</span>
 					</a>
 				</li>
+				<li class="dropdown">
+						<a href="attendance.php" class="dropdown-toggle no-arrow">
+							<span class="micon dw dw-house-1"></span><span class="mtext">Attendance</span>
+						</a>
+						
+					</li>
 				<li>
 					<a href="leave_type.php" class="dropdown-toggle no-arrow">
 						<span class="micon dw dw-calendar1"></span><span class="mtext">Request Type</span>
